@@ -37,17 +37,6 @@ public class Car extends Vehicle {
         return gears;
     }
 
-    public void setGears(int gears) {
-        this.gears = gears;
-    }
-
-    public boolean isManual() {
-        return isManual;
-    }
-
-    public void setManual(boolean manual) {
-        isManual = manual;
-    }
 
     public int getSeats() {
         return seats;
@@ -61,8 +50,8 @@ public class Car extends Vehicle {
         return currentGear;
     }
 
-    public void setCurrentGear(int currentGear) {
-        this.currentGear = currentGear;
+    public boolean isManual() {
+        return isManual;
     }
 
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
@@ -77,10 +66,8 @@ public class Car extends Vehicle {
     }
 
     public void changeGear(int newGear) {
-        if (newGear <= this.gears) {
             this.currentGear = newGear;
             System.out.println("changeGear method called - The gear is changed to: " + currentGear);
-        }
     }
 
     public void changeSpeed(int newSpeed, int newDirection){

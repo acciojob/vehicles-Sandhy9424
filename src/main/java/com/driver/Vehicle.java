@@ -8,16 +8,8 @@ public class Vehicle {
         return currentSpeed;
     }
 
-    public void setCurrentDirection(int currentDirection) {
-        this.currentDirection = currentDirection;
-    }
-
     public int getCurrentDirection() {
         return currentDirection;
-    }
-
-    public void setCurrentSpeed(int currentSpeed) {
-        this.currentSpeed = currentSpeed;
     }
 
     public Vehicle(String name) {
